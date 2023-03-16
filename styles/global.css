@@ -1,0 +1,342 @@
+:root {
+  --border-color: #291d4d;
+  --dialog-background: #fff3b4;
+
+  --menu-background: #ffe8d2;
+  --menu-border-color: #a48465;
+  --menu-font-color: #3a160d;
+  --menu-selected-background: #7fc2ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  font-family: "Ribeye", cursive;
+}
+.how-to-play {
+  position: absolute;
+  left: 0;
+  margin-top: 450px;
+  margin-left: 800px;
+  top: 0;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+.game-container {
+  position: relative;
+  width: 880px;
+  height: 1173px;
+  margin: 0 auto;
+  outline: 1px solid #fff;
+  margin-top: 10px;
+
+  /* /transform: scale(3) translateY(50%); */
+}
+#sleep {
+  position: absolute;
+  left: 780px;
+  top: 280px;
+}
+
+#music {
+  position: absolute;
+  left: 500px;
+  top: 370px;
+}
+
+#city {
+  position: absolute;
+  left: 650px;
+  top: 120px;
+}
+
+#cityDay {
+  position: absolute;
+  left: 840px;
+  top: 70px;
+}
+
+#moon {
+  position: absolute;
+  left: 1050px;
+  top: 110px;
+}
+.game-container canvas {
+  image-rendering: pixelated;
+}
+
+/* quick reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* relevant styles */
+.img__wrap {
+  position: absolute;
+}
+
+.img__description_layer {
+  position: absolute;
+  left: 670px;
+  top: 95px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #957dad;
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* relevant styles */
+.img__wrap_moon {
+  position: absolute;
+}
+
+.img__description_layer_moon {
+  position: absolute;
+  left: 1080px;
+  top: 90px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #957dad;
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* relevant styles */
+.img__wrap_city {
+  position: absolute;
+}
+
+.img__description_layer_city {
+  position: absolute;
+  left: 870px;
+  top: 85px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #957dad;
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+}
+
+/* relevant styles */
+.img__wrap_sleep {
+  position: absolute;
+}
+
+.img__description_layer_sleep {
+  position: absolute;
+  left: 790px;
+  top: 260px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #957dad;
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* relevant styles */
+.img__wrap_music {
+  position: absolute;
+}
+
+.img__description_layer_music {
+  position: absolute;
+  left: 500px;
+  top: 350px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #957dad;
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d7e7e6;
+  padding: 1rem 1.5rem;
+  width: 50rem;
+  height: 30rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal2 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d7e7e6;
+  padding: 1rem 1.5rem;
+  width: 50rem;
+  height: 30rem;
+  border-radius: 0.5rem;
+}
+
+.close-button2 {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button2:hover {
+  background-color: darkgray;
+}
+
+.show-modal2 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal3 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d7e7e6;
+  padding: 1rem 1.5rem;
+  width: 50rem;
+  height: 30rem;
+  border-radius: 0.5rem;
+}
+
+.close-button3 {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button3:hover {
+  background-color: darkgray;
+}
+
+.show-modal3 {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.react {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ts {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.js {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
