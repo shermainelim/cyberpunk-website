@@ -60,7 +60,7 @@ body {
 
 #cityDay {
   position: absolute;
-  left: 64px;
+  left: 640px;
   top: 40px;
 }
 
@@ -91,7 +91,7 @@ html {
 
 .img__description_layer {
   position: absolute;
-  left: 500x;
+  left: 500px;
   top: 35px;
   padding-left: 5px;
   padding-right: 5px;
