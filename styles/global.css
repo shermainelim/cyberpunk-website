@@ -42,32 +42,32 @@ body {
 }
 #sleep {
   position: absolute;
-  left: 780px;
-  top: 280px;
+  left: 600px;
+  top: 205px;
 }
 
 #music {
   position: absolute;
-  left: 500px;
-  top: 370px;
+  left: 380px;
+  top: 270px;
 }
 
 #city {
   position: absolute;
-  left: 650px;
-  top: 120px;
+  left: 480px;
+  top: 55px;
 }
 
 #cityDay {
   position: absolute;
-  left: 840px;
-  top: 70px;
+  left: 64px;
+  top: 40px;
 }
 
 #moon {
   position: absolute;
-  left: 1050px;
-  top: 110px;
+  left: 760px;
+  top: 60px;
 }
 .game-container canvas {
   image-rendering: pixelated;
@@ -91,8 +91,8 @@ html {
 
 .img__description_layer {
   position: absolute;
-  left: 670px;
-  top: 95px;
+  left: 500x;
+  top: 35px;
   padding-left: 5px;
   padding-right: 5px;
   background: #957dad;
@@ -111,8 +111,8 @@ html {
 
 .img__description_layer_moon {
   position: absolute;
-  left: 1080px;
-  top: 90px;
+  left: 780px;
+  top: 40px;
   padding-left: 5px;
   padding-right: 5px;
   background: #957dad;
@@ -131,8 +131,8 @@ html {
 
 .img__description_layer_city {
   position: absolute;
-  left: 870px;
-  top: 85px;
+  left: 680px;
+  top: 55px;
   padding-left: 5px;
   padding-right: 5px;
   background: #957dad;
@@ -153,8 +153,8 @@ html {
 
 .img__description_layer_sleep {
   position: absolute;
-  left: 790px;
-  top: 260px;
+  left: 615px;
+  top: 185px;
   padding-left: 5px;
   padding-right: 5px;
   background: #957dad;
@@ -173,8 +173,8 @@ html {
 
 .img__description_layer_music {
   position: absolute;
-  left: 500px;
-  top: 350px;
+  left: 390px;
+  top: 255px;
   padding-left: 5px;
   padding-right: 5px;
   background: #957dad;
