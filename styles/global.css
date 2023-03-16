@@ -204,7 +204,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #d7e7e6;
+  background-color: black;
   padding: 1rem 1.5rem;
   width: 50rem;
   height: 30rem;
@@ -251,7 +251,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #d7e7e6;
+  background-color: black;
   padding: 1rem 1.5rem;
   width: 50rem;
   height: 30rem;
@@ -279,6 +279,9 @@ html {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
+.heading{
+  color: aquamarine;
+}
 .modal3 {
   position: fixed;
   left: 0;
@@ -297,7 +300,7 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #d7e7e6;
+  background-color: black;
   padding: 1rem 1.5rem;
   width: 50rem;
   height: 30rem;
