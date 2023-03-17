@@ -22,20 +22,40 @@ body {
 .how-to-play {
   position: absolute;
   left: 0;
-  margin-top: 450px;
-  margin-left: 530px;
+  margin-top: 300px;
+  margin-left: 20px;
   top: 0;
   text-align: center;
   font-size: 18px;
   color: white;
 }
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
 .game-container {
   position: relative;
   width: 880px;
   height: 1173px;
   margin: 0 auto;
-  outline: 1px solid #fff;
+
   margin-top: 10px;
 
   /* /transform: scale(3) translateY(50%); */
@@ -149,6 +169,8 @@ html {
 /* relevant styles */
 .img__wrap_sleep {
   position: absolute;
+  top: -120px;
+  left: -1px;
 }
 
 .img__description_layer_sleep {
@@ -342,4 +364,75 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#SpaceGuy {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url("/images/maps/night.gif");
+}
+
+@media screen and (orientation: portrait) {
+  #SpaceGuy {
+    background-image: url('/images/maps/night.gif');
+    
+    background-image: 
+      image-set(
+        url('/images/maps/night.gif') 1x, 
+        url('/images/maps/night.gif') 2x
+      );
+  }
+}
+
+@media screen and (orientation: landscape) {
+  #SpaceGuy {
+    background-image: url("https://ucarecdn.com/4ff4b0cf-d47b-48ec-9836-e6fff96924a0/-/resize/450x/3.jpg");
+    
+    background-image: 
+      image-set(
+        url('/images/maps/night.gif') 1x, 
+        url('/images/maps/night.gif') 2x
+      );
+  }
+}
+
+@media screen and (min-width: 450px) {
+  #SpaceGuy {
+    background-image: url("https://ucarecdn.com/4ff4b0cf-d47b-48ec-9836-e6fff96924a0/-/resize/750x/5.jpg");
+    
+    background-image: 
+      image-set(
+        url("https://ucarecdn.com/4ff4b0cf-d47b-48ec-9836-e6fff96924a0/-/resize/750x/5.jpg") 1x, 
+        url("https://ucarecdn.com/4ff4b0cf-d47b-48ec-9836-e6fff96924a0/-/resize/1500x/-/quality/lightest/6.jpg") 2x
+      );
+  }
+}
+
+
+@media screen and (min-width: 750px) {
+  #SpaceGuy {
+    background-image: url('/images/maps/night.gif');
+    
+    background-image: 
+      image-set(
+        url('/images/maps/night.gif') 1x, 
+        url('/images/maps/night.gif') 2x
+      );
+  }
+}
+
+html, body {
+  margin: 0;
+}
+
+#SpaceGuy {
+
+  padding: 750px 20px 40px;
+}
+
+a {
+  color: #fbc700;
+  text-shadow: none;
 }
