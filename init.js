@@ -6,7 +6,7 @@ const music = document?.querySelector(".music");
 music?.addEventListener("mousedown", clicked2, false);
 
 // city?.addEventListener("mousedown", clicked3, false);
-const soundPlayer = new Audio("/images/characters/people/music.mp3");
+const soundPlayer = new Audio("/images/characters/people/music1.mp3");
 // function clicked1(e) {
 //   e.preventDefault();
 //   alert("Music stopped");
