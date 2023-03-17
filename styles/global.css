@@ -74,8 +74,8 @@ img.bg {
 
 #city {
   position: absolute;
-  left: 480px;
-  top: 55px;
+  left: 600px;
+  top: -680px;
 }
 
 #cityDay {
@@ -127,6 +127,8 @@ html {
 /* relevant styles */
 .img__wrap_moon {
   position: absolute;
+  left: -140px;
+  top: -0.5px;
 }
 
 .img__description_layer_moon {
@@ -147,12 +149,14 @@ html {
 /* relevant styles */
 .img__wrap_city {
   position: absolute;
+  left:200px;
+  top:70px;
 }
 
 .img__description_layer_city {
   position: absolute;
-  left: 680px;
-  top: 55px;
+  left: 650px;
+  top: 40px;
   padding-left: 5px;
   padding-right: 5px;
   background: #957dad;
@@ -169,8 +173,8 @@ html {
 /* relevant styles */
 .img__wrap_sleep {
   position: absolute;
-  top: -120px;
-  left: -1px;
+  top: -115px;
+  left: -150px;
 }
 
 .img__description_layer_sleep {
@@ -223,15 +227,14 @@ html {
 
 .modal-content {
   position: absolute;
-  top: 38%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: black;
   padding: 1rem 1.5rem;
-  width: 50rem;
-  height: 30rem;
+  width: 30rem;
+  height: 20rem;
   border-radius: 0.5rem;
-  text-align: center;
 }
 
 .close-button {
@@ -270,13 +273,13 @@ html {
 
 .modal-content2 {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: black;
   padding: 1rem 1.5rem;
-  width: 50rem;
-  height: 30rem;
+  width: 30rem;
+  height: 20rem;
   border-radius: 0.5rem;
 }
 
@@ -302,6 +305,7 @@ html {
 }
 
 .heading{
+  text-align: center;
   color: aquamarine;
 }
 .modal3 {
@@ -319,13 +323,13 @@ html {
 
 .modal-content3 {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: black;
   padding: 1rem 1.5rem;
-  width: 50rem;
-  height: 30rem;
+  width: 30rem;
+  height: 20rem;
   border-radius: 0.5rem;
 }
 
