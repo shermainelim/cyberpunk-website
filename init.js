@@ -15,12 +15,12 @@ const soundPlayer = new Audio("/images/characters/people/music1.mp3");
 // }
 function clicked2(e) {
   e.preventDefault();
-  alert("Music started");
+  //alert("Music started");
 
   soundPlayer.play();
   soundPlayer.loop = true;
 }
-soundPlayer.play();
+//soundPlayer.play();
 const sleep = document?.querySelector(".sleep");
 const modal = document.querySelector(".modal");
 const closeButton = document.querySelector(".close-button");
@@ -36,6 +36,7 @@ function windowOnClick(event) {
 }
 
 sleep.addEventListener("click", toggleModal);
+sleep.addEventListener("click", clicked2);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
