@@ -54,11 +54,9 @@ img.bg {
 }
 .game-container {
   position: relative;
-  width: 1500px;
+  width: 1700px;
   height: 1173px;
   margin: 0 auto;
-  margin-top: 10px;
-
   /* /transform: scale(3) translateY(50%); */
 }
 #sleep {
@@ -128,8 +126,8 @@ html {
 /* relevant styles */
 .img__wrap_moon {
   position: absolute;
-  left: -80px;
-  top: -0.5px;
+  left: -0.5px;
+  top: -35px;
 }
 
 .img__description_layer_moon {
@@ -150,8 +148,8 @@ html {
 /* relevant styles */
 .img__wrap_city {
   position: absolute;
-  left:200px;
-  top:50px;
+  left:300px;
+  top:20px;
 }
 
 .img__description_layer_city {
@@ -174,8 +172,8 @@ html {
 /* relevant styles */
 .img__wrap_sleep {
   position: absolute;
-  top: -115px;
-  left: -130px;
+  top: -145px;
+  left: -60px;
 }
 
 .img__description_layer_sleep {
@@ -229,7 +227,7 @@ html {
 .modal-content {
   position: absolute;
   top: 30%;
-  left: 50%;
+  left: 44%;
   transform: translate(-50%, -50%);
   background-color: black;
   padding: 1rem 1.5rem;
@@ -276,7 +274,7 @@ html {
 .modal-content2 {
   position: absolute;
   top: 30%;
-  left: 50%;
+  left: 44%;
   transform: translate(-50%, -50%);
   background-color: black;
   padding: 1rem 1.5rem;
@@ -327,7 +325,7 @@ html {
 .modal-content3 {
   position: absolute;
   top: 30%;
-  left: 50%;
+  left: 44%;
   transform: translate(-50%, -50%);
   background-color: black;
   padding: 1rem 1.5rem;
