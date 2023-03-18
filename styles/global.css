@@ -29,6 +29,8 @@ body {
   font-size: 18px;
   color: white;
 }
+
+
 img.bg {
   /* Set rules to fill background */
   min-height: 100%;
@@ -52,10 +54,9 @@ img.bg {
 }
 .game-container {
   position: relative;
-  width: 880px;
+  width: 1500px;
   height: 1173px;
   margin: 0 auto;
-
   margin-top: 10px;
 
   /* /transform: scale(3) translateY(50%); */
@@ -127,7 +128,7 @@ html {
 /* relevant styles */
 .img__wrap_moon {
   position: absolute;
-  left: -140px;
+  left: -80px;
   top: -0.5px;
 }
 
@@ -150,7 +151,7 @@ html {
 .img__wrap_city {
   position: absolute;
   left:200px;
-  top:70px;
+  top:50px;
 }
 
 .img__description_layer_city {
@@ -174,7 +175,7 @@ html {
 .img__wrap_sleep {
   position: absolute;
   top: -115px;
-  left: -150px;
+  left: -130px;
 }
 
 .img__description_layer_sleep {
